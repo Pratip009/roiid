@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    width: 100%;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  .sidebar {
+    width: 500px;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
+  
+  .feed {
+    flex: 1;
+    padding: 1rem;
+    background-color: #f0f2f5;
+    overflow-y: auto;
+  }
+  
+  .feed-post {
+    margin-bottom: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .feed-post img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .feed-post .post-content {
+    padding: 1rem;
+  }
+  
+  .avatar {
+    background-color: #007bff;
+    color: #ffffff;
+    margin-right: 1rem;
+  }
+  
+  .chip {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+  
+  .chip:hover {
+    background-color: #0056b3;
+  }
+  
